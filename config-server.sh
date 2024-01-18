@@ -191,7 +191,7 @@ function menu_1_accion_1 {
 			timedatectl set-timezone America/Caracas
 
 			# Inicio y habilitación del servicio chronyd
-			systemctl start chronyd && systemctl enable chronyd && systemctl status chronyd
+			systemctl start chronyd && systemctl enable chronyd
 
 			# Configuración de HISTTIMEFORMAT en .bashrc
 			echo "export HISTTIMEFORMAT='%d-%m-%Y %H:%M:%S '" >> /root/.bashrc
