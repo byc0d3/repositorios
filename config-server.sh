@@ -195,6 +195,7 @@ function menu_1_accion_1 {
 
 			# Configuración de HISTTIMEFORMAT en .bashrc
 			echo "export HISTTIMEFORMAT='%d-%m-%Y %H:%M:%S '" >> /root/.bashrc
+			source ~/.bashrc
 
 			proceso_finalizado
 		else
