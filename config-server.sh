@@ -68,9 +68,12 @@ menu_2_2() {
 	clear
 	echo -e "${VE}Gestor de Paquetes:${CL}"
 	echo
-	echo -e "${CY}(1)${CL}. Instalar PHP 8.1"
-	echo -e "${CY}(2)${CL}. Instalar PHP 8.2"
-	echo -e "${CY}(3)${CL}. Instalar PHP 8.3"
+	echo -e "${CY}(1)${CL}. Instalar PHP 7.2"
+	echo -e "${CY}(2)${CL}. Instalar PHP 7.3"
+	echo -e "${CY}(3)${CL}. Instalar PHP 7.4"
+	echo -e "${CY}(4)${CL}. Instalar PHP 8.1"
+	echo -e "${CY}(5)${CL}. Instalar PHP 8.2"
+	echo -e "${CY}(6)${CL}. Instalar PHP 8.3"
 	echo -e "${CY}(x)${CL}. ${RO}Desinstalar PHP${CL}"
 	echo
 	echo -e "${RO}(v)${CL}. Volver"
@@ -371,6 +374,114 @@ function menu_2_2_accion_1 {
 		read -n 1 -s -r -p "Presiona cualquier tecla para continuar..."
 	else
 		echo "**********************************************************************************"
+		echo "* Esta opcion ejecutara la instalacion de PHP 7.2:"
+		echo "**********************************************************************************"
+		echo "* Se instalara PHP 7.2"
+		echo ""
+		confirmar_proceso
+		read confirmar
+		# Verificar la respuesta del usuario
+		if [ "$confirmar" == "yes" ]; then
+			# Install PHP
+			dnf module list php
+			dnf config-manager --set-enabled powertools
+			dnf -y --assumeyes install https://rpms.remirepo.net/enterprise/remi-release-8.rpm
+			dnf -y --assumeyes module reset php
+			dnf -y --assumeyes module install php:remi-7.2
+			dnf -y --assumeyes install php-intl php-mbstring php-cli php-xml php-mysqlnd php-gd php-curl php-zip php-json php-imagick php-simplexml
+
+			printf "<?php phpinfo(); ?>" > /var/www/html/test.php
+			systemctl restart httpd
+
+			proceso_finalizado
+		else
+			proceso_cancelado
+		fi
+	fi
+}
+
+function menu_2_2_accion_2 {
+	clear
+	# Verificar la respuesta del usuario
+	if php -v &> /dev/null; then
+		php_version=$(php -v | awk '/^PHP/ {print $2}')
+		echo -e "${AM}Ya existe una instalacion de PHP, en su version $php_version.${CL}"
+		echo ""
+		read -n 1 -s -r -p "Presiona cualquier tecla para continuar..."
+	else
+		echo "**********************************************************************************"
+		echo "* Esta opcion ejecutara la instalacion de PHP 7.3:"
+		echo "**********************************************************************************"
+		echo "* Se instalara PHP 7.3"
+		echo ""
+		confirmar_proceso
+		read confirmar
+		# Verificar la respuesta del usuario
+		if [ "$confirmar" == "yes" ]; then
+			# Install PHP
+			dnf module list php
+			dnf config-manager --set-enabled powertools
+			dnf -y --assumeyes install https://rpms.remirepo.net/enterprise/remi-release-8.rpm
+			dnf -y --assumeyes module reset php
+			dnf -y --assumeyes module install php:remi-7.3
+			dnf -y --assumeyes install php-intl php-mbstring php-cli php-xml php-mysqlnd php-gd php-curl php-zip php-json php-imagick php-simplexml
+
+			printf "<?php phpinfo(); ?>" > /var/www/html/test.php
+			systemctl restart httpd
+
+			proceso_finalizado
+		else
+			proceso_cancelado
+		fi
+	fi
+}
+
+function menu_2_2_accion_3 {
+	clear
+	# Verificar la respuesta del usuario
+	if php -v &> /dev/null; then
+		php_version=$(php -v | awk '/^PHP/ {print $2}')
+		echo -e "${AM}Ya existe una instalacion de PHP, en su version $php_version.${CL}"
+		echo ""
+		read -n 1 -s -r -p "Presiona cualquier tecla para continuar..."
+	else
+		echo "**********************************************************************************"
+		echo "* Esta opcion ejecutara la instalacion de PHP 7.4:"
+		echo "**********************************************************************************"
+		echo "* Se instalara PHP 7.4"
+		echo ""
+		confirmar_proceso
+		read confirmar
+		# Verificar la respuesta del usuario
+		if [ "$confirmar" == "yes" ]; then
+			# Install PHP
+			dnf module list php
+			dnf config-manager --set-enabled powertools
+			dnf -y --assumeyes install https://rpms.remirepo.net/enterprise/remi-release-8.rpm
+			dnf -y --assumeyes module reset php
+			dnf -y --assumeyes module install php:remi-7.4
+			dnf -y --assumeyes install php-intl php-mbstring php-cli php-xml php-mysqlnd php-gd php-curl php-zip php-json php-imagick php-simplexml
+
+			printf "<?php phpinfo(); ?>" > /var/www/html/test.php
+			systemctl restart httpd
+
+			proceso_finalizado
+		else
+			proceso_cancelado
+		fi
+	fi
+}
+
+function menu_2_2_accion_4 {
+	clear
+	# Verificar la respuesta del usuario
+	if php -v &> /dev/null; then
+		php_version=$(php -v | awk '/^PHP/ {print $2}')
+		echo -e "${AM}Ya existe una instalacion de PHP, en su version $php_version.${CL}"
+		echo ""
+		read -n 1 -s -r -p "Presiona cualquier tecla para continuar..."
+	else
+		echo "**********************************************************************************"
 		echo "* Esta opcion ejecutara la instalacion de PHP 8.1:"
 		echo "**********************************************************************************"
 		echo "* Se instalara PHP 8.1"
@@ -397,7 +508,7 @@ function menu_2_2_accion_1 {
 	fi
 }
 
-function menu_2_2_accion_2 {
+function menu_2_2_accion_5 {
 	clear
 	# Verificar la respuesta del usuario
 	if php -v &> /dev/null; then
@@ -433,7 +544,7 @@ function menu_2_2_accion_2 {
 	fi
 }
 
-function menu_2_2_accion_3 {
+function menu_2_2_accion_6 {
 	clear
 	# Verificar la respuesta del usuario
 	if php -v &> /dev/null; then
@@ -703,6 +814,18 @@ while true; do
 									menu_2_2_accion_2
 									;;
 								3)
+									confirmar_accion || continue
+									menu_2_2_accion_3
+									;;
+								4)
+									confirmar_accion || continue
+									menu_2_2_accion_3
+									;;
+								5)
+									confirmar_accion || continue
+									menu_2_2_accion_3
+									;;
+								6)
 									confirmar_accion || continue
 									menu_2_2_accion_3
 									;;
