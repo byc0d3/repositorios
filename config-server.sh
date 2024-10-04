@@ -519,7 +519,7 @@ function menu_2_3_accion_1 {
 			# Verificar la respuesta del usuario
 			if [ "$confirmar" == "yes" ]; then
 				# Install PHP
-				wget https://getcomposer.org/installer -O composer-installer.php
+				wget -y https://getcomposer.org/installer -O composer-installer.php
 				php composer-installer.php --filename=composer --install-dir=/usr/local/bin
 				systemctl restart httpd
 

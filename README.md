@@ -48,5 +48,6 @@ wget -qO- https://raw.githubusercontent.com/byc0d3/repositorios/refs/heads/main/
 1- Para instalar composer ejecute el siguiente comando:
 
 ```
-wget -qO- https://raw.githubusercontent.com/byc0d3/repositorios/refs/heads/main/install.composer.sh | bash
+wget -qO- https://raw.githubusercontent.com/byc0d3/repositorios/refs/heads/main/install-composer.sh | bash
+
 ```
