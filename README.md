@@ -42,3 +42,11 @@ wget -qO- https://raw.githubusercontent.com/byc0d3/repositorios/refs/heads/main/
 ```
 wget -qO- https://raw.githubusercontent.com/byc0d3/repositorios/refs/heads/main/install-php84.sh | bash
 ```
+
+## Instalar Composer
+
+1- Para instalar composer ejecute el siguiente comando:
+
+```
+wget -qO- https://raw.githubusercontent.com/byc0d3/repositorios/refs/heads/main/install.composer.sh | bash
+```
