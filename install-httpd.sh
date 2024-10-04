@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Install httpd
-dnf -y --assumeyes install httpd
+dnf -y install httpd
 
 # Enable and start httpd
 systemctl enable httpd --now
