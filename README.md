@@ -22,3 +22,13 @@ https://raw.githubusercontent.com/byc0d3/repositorios/main/MobaXterm-Keygen.py
 ```
 python3 MobaXterm-Keygen.py usuario version
 ```
+
+## Remove Firewalld
+
+https://raw.githubusercontent.com/byc0d3/repositorios/main/remove-firewalld.sh
+
+1- Para ejecutar use el siguiente comando:
+
+```
+bash remove-firewalld.sh
+```
