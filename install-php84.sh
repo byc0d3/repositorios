@@ -8,4 +8,4 @@ dnf config-manager --set-enabled remi-safe
 
 dnf module reset php -y
 dnf module install php:remi-8.4 -y
-dnf install php-intl php-mbstring php-cli php-xml php-mysqlnd php-gd php-curl php-zip php-json php-imagick php-simplexml -y
+dnf install php-intl php-mbstring php-cli php-xml php-mysqlnd php-gd php-curl php-zip php-json php-imagick php-simplexml
