@@ -49,5 +49,12 @@ wget -qO- https://raw.githubusercontent.com/byc0d3/repositorios/refs/heads/main/
 
 ```
 wget -qO- https://raw.githubusercontent.com/byc0d3/repositorios/refs/heads/main/install-composer.sh | bash
+```
 
+## Instalar MariaDB
+
+1- Para instalar MariaDB ejecute el siguiente comando:
+
+```
+wget -qO- https://raw.githubusercontent.com/byc0d3/repositorios/refs/heads/main/install-mariadb.sh | bash
 ```
