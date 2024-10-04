@@ -32,3 +32,13 @@ https://raw.githubusercontent.com/byc0d3/repositorios/main/remove-firewalld.sh
 ```
 bash remove-firewalld.sh
 ```
+
+## Instalar httpd
+
+https://raw.githubusercontent.com/byc0d3/repositorios/main/install-httpd.sh
+
+1- Para ejecutar use el siguiente comando:
+
+```
+bash install-httpd.sh
+```
