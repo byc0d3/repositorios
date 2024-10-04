@@ -4,6 +4,8 @@
 - [Remove Firewalld](#Remove-Firewalld)
 - [Instalar httpd](#Instalar-httpd)
 - [Instalar PHP 8.4](#Instalar-PHP-84)
+- [Instalar Composer](#Instalar-Compose)
+- [Instalar MariaDB](#Instalar-MariaDB)
 
 ## MobaXterm Keygen
 
@@ -19,9 +21,9 @@ wget https://raw.githubusercontent.com/byc0d3/repositorios/refs/heads/main/MobaX
 python3 MobaXterm-Keygen.py usuario version
 ```
 
-## Remove Firewalld
+## Remover Firewalld
 
-1- Para desabilitar firewalld ejecuto el siguiente comando:
+1- Para desabilitar firewalld ejecute el siguiente comando:
 
 ```
 wget -qO- https://raw.githubusercontent.com/byc0d3/repositorios/refs/heads/main/remove-firewalld.sh | bash
