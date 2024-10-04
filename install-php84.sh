@@ -1,5 +1,6 @@
 #!/bin/bash
 
+dnf config-manager --set-enabled powertools
 dnf -y install https://rpms.remirepo.net/enterprise/remi-release-9.rpm
 dnf -y module reset php
 dnf -y module install php:remi-8.4
