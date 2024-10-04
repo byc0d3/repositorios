@@ -1,23 +1,19 @@
 # Repositorios
 
-- [Config Server](#Config-Server)
 - [MobaXterm Keygen](#MobaXterm-Keygen)
-
-## Config Server
-
-https://raw.githubusercontent.com/byc0d3/repositorios/main/config-server.sh
-
-1- Para ejecutar use el siguiente comando:
-
-```
-bash config-server.sh
-```
+- [Remove Firewalld](#Remove-Firewalld)
+- [Instalar httpd](#Instalar-httpd)
+- [Instalar PHP 8.4](#Instalar-PHP-84)
 
 ## MobaXterm Keygen
 
-https://raw.githubusercontent.com/byc0d3/repositorios/main/MobaXterm-Keygen.py
+1- Para generar una licencia descargue el script:
 
-1- Para ejecutar use el siguiente comando y reemplase los datos:
+```
+wget https://raw.githubusercontent.com/byc0d3/repositorios/main/MobaXterm-Keygen.py
+```
+
+2- Ejecute el siguiente comando y reemplase los datos:
 
 ```
 python3 MobaXterm-Keygen.py usuario version
@@ -25,20 +21,24 @@ python3 MobaXterm-Keygen.py usuario version
 
 ## Remove Firewalld
 
-https://raw.githubusercontent.com/byc0d3/repositorios/main/remove-firewalld.sh
-
-1- Para ejecutar use el siguiente comando:
+1- Para desabilitar firewalld ejecuto el siguiente comando:
 
 ```
-bash remove-firewalld.sh
+wget -qO- https://raw.githubusercontent.com/byc0d3/repositorios/main/remove-firewalld.sh | bash
 ```
 
 ## Instalar httpd
 
-https://raw.githubusercontent.com/byc0d3/repositorios/main/install-httpd.sh
-
-1- Para ejecutar use el siguiente comando:
+1- Para instalar httpd ejecute el siguiente comando:
 
 ```
-bash install-httpd.sh
+wget -qO- https://raw.githubusercontent.com/byc0d3/repositorios/main/install-httpd.sh | bash
+```
+
+## Instalar PHP 8.4
+
+1- Para instalar php 8.4 ejecute el siguiente comando:
+
+```
+wget -qO- https://raw.githubusercontent.com/byc0d3/repositorios/main/install-php84.sh | bash
 ```
