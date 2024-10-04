@@ -29,12 +29,18 @@ python3 MobaXterm-Keygen.py usuario version
 wget -qO- https://raw.githubusercontent.com/byc0d3/repositorios/refs/heads/main/remove-firewalld.sh | bash
 ```
 
-## Instalar httpd
+## httpd
 
 1- Para instalar httpd ejecute el siguiente comando:
 
 ```
 wget -qO- https://raw.githubusercontent.com/byc0d3/repositorios/refs/heads/main/install-httpd.sh | bash
+```
+
+2- Para crear virtualhost descargue el siguiente scritp y ejecutelo:
+
+```
+wget -qO- https://raw.githubusercontent.com/byc0d3/repositorios/refs/heads/main/crear-virtualhost.sh | bash
 ```
 
 ## Instalar PHP 8.4
@@ -59,4 +65,12 @@ wget -qO- https://raw.githubusercontent.com/byc0d3/repositorios/refs/heads/main/
 
 ```
 wget -qO- https://raw.githubusercontent.com/byc0d3/repositorios/refs/heads/main/install-mariadb.sh | bash
+```
+
+## CI4
+
+1- Para restaurar la base de datos de CI4 a su estado original descargue y ejecute este script:
+
+```
+wget https://raw.githubusercontent.com/byc0d3/repositorios/refs/heads/main/drop-database-ci4.sh
 ```
