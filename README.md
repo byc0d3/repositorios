@@ -47,10 +47,10 @@ wget https://raw.githubusercontent.com/byc0d3/repositorios/refs/heads/main/crear
 
 ## PHP
 
-1- Para instalar php 8.4 ejecute el siguiente comando:
+1- Para instalar php 8.3 ejecute el siguiente comando:
 
 ```
-wget -qO- https://raw.githubusercontent.com/byc0d3/repositorios/refs/heads/main/install-php84.sh | bash
+wget -qO- https://raw.githubusercontent.com/byc0d3/repositorios/refs/heads/main/install-php83.sh | bash
 ```
 
 2- Para instalar composer ejecute el siguiente comando:
