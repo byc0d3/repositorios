@@ -2,12 +2,12 @@
 
 ### Linux
 
-- [MobaXterm](#mobaxterm)
-- [Firewalld](#firewalld)
-- [httpd](#httpd)
-- [php](#php)
-- [MariaDB](#mariadb)
-- [CI4](#ci4)
+-   [MobaXterm](#mobaxterm)
+-   [Firewalld](#firewalld)
+-   [httpd](#httpd)
+-   [php](#php)
+-   [MariaDB](#mariadb)
+-   [CI4](#ci4)
 
 ## MobaXterm
 
@@ -42,7 +42,7 @@ wget -qO- https://raw.githubusercontent.com/byc0d3/repositorios/refs/heads/main/
 2- Para crear virtualhost descargue el siguiente scritp y ejecutelo:
 
 ```
-wget -qO- https://raw.githubusercontent.com/byc0d3/repositorios/refs/heads/main/crear-virtualhost.sh | bash
+wget https://raw.githubusercontent.com/byc0d3/repositorios/refs/heads/main/crear-virtualhost.sh
 ```
 
 ## PHP
