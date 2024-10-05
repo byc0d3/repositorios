@@ -2,15 +2,14 @@
 
 ### Linux
 
-- [MobaXterm Keygen](#MobaXterm-Keygen)
-- [Remove Firewalld](#Remove-Firewalld)
-- [Instalar httpd](#Instalar-httpd)
-- [Instalar PHP 8.4](#Instalar-PHP-84)
-- [Instalar Composer](#Instalar-Compose)
-- [Instalar MariaDB](#Instalar-MariaDB)
-- [CI4](#CI4)
+- [MobaXterm](#mobaxterm)
+- [Firewalld](#firewalld)
+- [httpd](#httpd)
+- [php](#php)
+- [MariaDB](#mariadb)
+- [CI4](#ci4)
 
-## MobaXterm Keygen
+## MobaXterm
 
 1- Para generar una licencia descargue el script:
 
@@ -24,7 +23,7 @@ wget https://raw.githubusercontent.com/byc0d3/repositorios/refs/heads/main/MobaX
 python3 MobaXterm-Keygen.py usuario version
 ```
 
-## Remover Firewalld
+## Firewalld
 
 1- Para desabilitar firewalld ejecute el siguiente comando:
 
@@ -32,7 +31,7 @@ python3 MobaXterm-Keygen.py usuario version
 wget -qO- https://raw.githubusercontent.com/byc0d3/repositorios/refs/heads/main/remove-firewalld.sh | bash
 ```
 
-## httpd
+## HTTPD
 
 1- Para instalar httpd ejecute el siguiente comando:
 
@@ -46,7 +45,7 @@ wget -qO- https://raw.githubusercontent.com/byc0d3/repositorios/refs/heads/main/
 wget -qO- https://raw.githubusercontent.com/byc0d3/repositorios/refs/heads/main/crear-virtualhost.sh | bash
 ```
 
-## Instalar PHP 8.4
+## PHP
 
 1- Para instalar php 8.4 ejecute el siguiente comando:
 
@@ -54,15 +53,13 @@ wget -qO- https://raw.githubusercontent.com/byc0d3/repositorios/refs/heads/main/
 wget -qO- https://raw.githubusercontent.com/byc0d3/repositorios/refs/heads/main/install-php84.sh | bash
 ```
 
-## Instalar Composer
-
-1- Para instalar composer ejecute el siguiente comando:
+2- Para instalar composer ejecute el siguiente comando:
 
 ```
 wget -qO- https://raw.githubusercontent.com/byc0d3/repositorios/refs/heads/main/install-composer.sh | bash
 ```
 
-## Instalar MariaDB
+## MariaDB
 
 1- Para instalar MariaDB ejecute el siguiente comando:
 
