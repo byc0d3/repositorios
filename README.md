@@ -31,6 +31,14 @@ python3 MobaXterm-Keygen.py usuario version
 wget -qO- https://raw.githubusercontent.com/byc0d3/repositorios/refs/heads/main/remove-firewalld.sh | bash
 ```
 
+## Server LAMP
+
+1- Para instalar server LAMP ejecute el siguiente comando:
+
+```
+wget -qO- https://raw.githubusercontent.com/byc0d3/repositorios/refs/heads/main/instalar-server-lapm.sh | bash
+```
+
 ## HTTPD
 
 1- Para instalar httpd ejecute el siguiente comando:
