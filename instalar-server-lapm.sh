@@ -34,7 +34,7 @@ dnf -y --assumeyes install mariadb-server mariadb
 systemctl enable mariadb
 systemctl start mariadb
 
-rm -f composer-installer.php
-rm -f mariadb-server mariadb
+rm -f composer-installer.php*
+rm -f mariadb_repo_setup*
 
 echo "Script completado. Todos los servicios han sido instalados y configurados."
