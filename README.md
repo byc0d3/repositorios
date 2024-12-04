@@ -4,6 +4,7 @@
 
 -   [MobaXterm](#mobaxterm)
 -   [Firewalld](#firewalld)
+-   [LAMP](#lamp)
 -   [httpd](#httpd)
 -   [php](#php)
 -   [MariaDB](#mariadb)
@@ -31,7 +32,7 @@ python3 MobaXterm-Keygen.py usuario version
 wget -qO- https://raw.githubusercontent.com/byc0d3/repositorios/refs/heads/main/remove-firewalld.sh | bash
 ```
 
-## Server LAMP
+## Lamp
 
 1- Para instalar server LAMP ejecute el siguiente comando:
 
