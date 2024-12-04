@@ -23,6 +23,9 @@ systemctl restart httpd
 wget https://getcomposer.org/installer -O composer-installer.php
 php composer-installer.php --filename=composer --install-dir=/usr/local/bin
 
+# Eliminar el instalador de Composer rm -f composer-installer.php
+rm -f composer-installer.php*
+
 # Reiniciar httpd nuevamente
 systemctl restart httpd
 
@@ -30,11 +33,11 @@ systemctl restart httpd
 wget https://downloads.mariadb.com/MariaDB/mariadb_repo_setup | bash
 dnf -y --assumeyes install mariadb-server mariadb
 
+# Eliminar el script de configuración del repositorio de MariaDB rm -f mariadb_repo_setup
+rm -f mariadb_repo_setup*
+
 # Habilitar y empezar MariaDB
 systemctl enable mariadb
 systemctl start mariadb
-
-rm -f composer-installer.php*
-rm -f mariadb_repo_setup*
 
 echo "Script completado. Todos los servicios han sido instalados y configurados."
