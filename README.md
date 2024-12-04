@@ -2,6 +2,7 @@
 
 ### Linux
 
+-   [Repos](#repos)
 -   [MobaXterm](#mobaxterm)
 -   [Firewalld](#firewalld)
 -   [LAMP](#lamp)
@@ -9,6 +10,14 @@
 -   [php](#php)
 -   [MariaDB](#mariadb)
 -   [CI4](#ci4)
+
+## Repos
+
+1- Para descargar todos los repositorios ejecute el siguiente comando:
+
+```
+wget -qO- https://raw.githubusercontent.com/byc0d3/repositorios/refs/heads/main/clone_repos.sh | bash
+```
 
 ## MobaXterm
 
